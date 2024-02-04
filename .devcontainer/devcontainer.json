@@ -1,0 +1,17 @@
+{
+    "name": "AL2023-Go",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "golang.Go"
+            ]
+        }
+    },
+    "onCreateCommand": {
+        "go": "yum -y install go && go install -v golang.org/x/tools/gopls@latest && go install github.com/go-delve/delve/cmd/dlv@latest"
+    }
+}

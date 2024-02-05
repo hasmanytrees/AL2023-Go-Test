@@ -3,10 +3,6 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
-    "remoteUser": "root",
-    "mounts": [
-        {"type": "bind", "source": "${localEnv:HOME}/.ssh", "target": "/root/.ssh"}
-    ],
     "customizations": {
         "vscode": {
             "extensions": [

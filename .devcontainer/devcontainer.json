@@ -4,7 +4,7 @@
         "dockerfile": "Dockerfile"
     },
     "features": {
-        "./go": {},
-        "./awscli": {}
+        "ghcr.io/hasmanytrees/al2023-devcon/go": {},
+        "ghcr.io/hasmanytrees/al2023-devcon/awscli": {}
     }
 }

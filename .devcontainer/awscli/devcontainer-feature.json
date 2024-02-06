@@ -1,8 +1,0 @@
-{
-    "id": "awscli",
-    "name": "AWSCLI v2",
-    "version": "0.0.1",
-    "mounts": [
-        { "type": "bind", "source": "${localEnv:HOME}${localEnv:USERPROFILE}/.aws", "target": "/root/.aws" }
-    ]
-}

@@ -1,1 +1,0 @@
-yum update && yum -y install awscli-2

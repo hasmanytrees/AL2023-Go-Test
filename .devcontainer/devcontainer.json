@@ -3,8 +3,11 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
+    "remoteEnv": {
+        "LOCAL_USER_PATH": "${localEnv:HOME}${localEnv:USERPROFILE}"
+    },
     "mounts": [
-        {"type": "bind", "source": "${localEnv:HOME}/.aws", "target": "/root/.aws"}
+        {"type": "bind", "source": "${remoteEnv:LOCAL_USER_PATH}/.aws", "target": "/root/.aws"}
     ],
     "customizations": {
         "vscode": {

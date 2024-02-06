@@ -3,17 +3,8 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
-    "mounts": [
-        { "type": "bind", "source": "${localEnv:HOME}${localEnv:USERPROFILE}/.aws", "target": "/root/.aws" }
-    ],
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "golang.Go"
-            ]
-        }
-    }, 
-    "onCreateCommand": {
-        "go": "yum -y install go && go install -v golang.org/x/tools/gopls@latest && go install github.com/go-delve/delve/cmd/dlv@latest && go install honnef.co/go/tools/cmd/staticcheck@latest && yum -y install awscli-2"
+    "features": {
+        "./go": {},
+        "./awscli": {}
     }
 }

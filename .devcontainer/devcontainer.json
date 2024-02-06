@@ -1,6 +1,9 @@
 {
     "name": "AL2023-Go",
-    "image": "ghcr.io/hasmanytrees/al2023-devcon:latest",
+    // "image": "ghcr.io/hasmanytrees/al2023-devcon:latest",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
     "features": {
         "ghcr.io/hasmanytrees/al2023-devcon/go": {},
         "ghcr.io/hasmanytrees/al2023-devcon/awscli": {}

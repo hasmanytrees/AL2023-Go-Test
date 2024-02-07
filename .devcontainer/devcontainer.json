@@ -3,6 +3,7 @@
     "image": "ghcr.io/hasmanytrees/al2023-devcon:latest",
     "features": {
         "ghcr.io/hasmanytrees/al2023-devcon/go": {},
-        "ghcr.io/hasmanytrees/al2023-devcon/awscli": {}
+        "ghcr.io/hasmanytrees/al2023-devcon/awscli": {},
+        "ghcr.io/hasmanytrees/al2023-devcon/aws-amplify-cli": {}
     }
 }
